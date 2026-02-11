@@ -16,3 +16,8 @@ if __name__ == "__main__":
     print(message)
     
     print("\nYou've successfully created your first Python project with GitHub!")
+    # Create a new route that exposes the cities of a country:
+@app.get('/countries/{country}')
+def cities(country: str):
+    return list(data[country].keys())
+    
