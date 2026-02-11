@@ -20,4 +20,5 @@ if __name__ == "__main__":
 @app.get('/countries/{country}')
 def cities(country: str):
     return list(data[country].keys())
+    /tests help me to create a new test for this route that uses Spain as the country/region.
     
